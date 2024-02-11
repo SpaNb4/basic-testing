@@ -1,5 +1,5 @@
-import { getBankAccount } from '.';
 import {
+  getBankAccount,
   InsufficientFundsError,
   TransferFailedError,
   SynchronizationFailedError,
