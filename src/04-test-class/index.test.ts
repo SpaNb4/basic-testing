@@ -93,7 +93,7 @@ describe('BankAccount', () => {
     const initialBalance = 100;
     const bankAccount = getBankAccount(initialBalance);
 
-    jest.mocked(random).mockReturnValue(50);
+    jest.mocked(random).mockReturnValue(1);
     const balance = await bankAccount.fetchBalance();
 
     expect(typeof balance).toBe('number');
